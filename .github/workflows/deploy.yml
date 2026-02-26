@@ -1,0 +1,50 @@
+name: Build and Deploy Dist to Deployment Branch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checkout main branch
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2️⃣ Setup Node.js
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      # 3️⃣ Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # 4️⃣ Build project
+      - name: Build Vite project
+        run: npm run build
+
+      # 5️⃣ Deploy dist to deployment branch
+      - name: Deploy dist folder
+        run: |
+          git config --global user.name "YourGitHubUsername"
+          git config --global user.email "youremail@example.com"
+
+          # Switch to deployment branch or create it
+          git fetch origin deployment
+          git checkout deployment || git checkout --orphan deployment
+
+          # Remove old files
+          git rm -rf . || true
+
+          # Copy build output
+          rsync -av --progress dist/ . --exclude=.git
+
+          # Commit and push
+          git add .
+          git commit -m "Deploy dist from main branch"
+          git push origin deployment --force
