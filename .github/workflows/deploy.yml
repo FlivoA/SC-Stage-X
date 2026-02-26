@@ -31,8 +31,8 @@ jobs:
       # 5️⃣ Deploy dist to deployment branch
       - name: Deploy dist folder
         run: |
-          git config --global user.name "YourGitHubUsername"
-          git config --global user.email "youremail@example.com"
+          git config --global user.name "pankajstagex"
+          git config --global user.email "pankaj@stage-x.biz"
 
           # Switch to deployment branch or create it
           git fetch origin deployment
