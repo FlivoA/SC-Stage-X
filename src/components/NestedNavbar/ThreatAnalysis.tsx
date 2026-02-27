@@ -5,7 +5,7 @@ import HeroImg from '../../images/68233ba8410acd57ae541d6a_Cyber attack map.webp
 const ThreatAnalysis: React.FC = () => (
 
     <main>
-        {/* hero section  */}
+        {/* 01 hero section  */}
         <section className="bg-[#002B54] py-10 flex flex-row items-center justify-around text-white">
             <div>
                 <h1 className="text-7xl font-bold mb-4 mt-6 p-5">
@@ -29,6 +29,21 @@ const ThreatAnalysis: React.FC = () => (
                 </p>
             </div>
         </section>
+
+        {/* 2. OVERVIEW */}
+        <section className="bg-[#002B54] py-10 flex flex-row items-center justify-around text-white">
+            <div>
+                
+            </div>
+
+
+            <div>
+                
+            </div>
+
+        </section>
+
+
     </main>
 
 );
