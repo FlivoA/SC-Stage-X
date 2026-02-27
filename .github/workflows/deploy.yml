@@ -1,50 +1,54 @@
-name: Build and Deploy Dist to Deployment Branch
+name: Deploy to Hostinger (Backend + Frontend)
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]   # 🔥 Trigger when pushing to MAIN branch
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout main branch
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      # 2️⃣ Setup Node.js
-      - name: Setup Node
-        uses: actions/setup-node@v3
+      - name: SSH into server and deploy
+        uses: appleboy/ssh-action@v1.2.0
         with:
-          node-version: 18
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          script: |
+            set -e
 
-      # 3️⃣ Install dependencies
-      - name: Install dependencies
-        run: npm install
+            APP_DIR=/var/www/security-council
 
-      # 4️⃣ Build project
-      - name: Build Vite project
-        run: npm run build
+            if [ ! -d "$APP_DIR" ]; then
+              echo "App directory $APP_DIR does not exist" >&2
+              exit 1
+            fi
 
-      # 5️⃣ Deploy dist to deployment branch
-      - name: Deploy dist folder
-        run: |
-          git config --global user.name "pankajstagex"
-          git config --global user.email "pankaj@stage-x.biz"
+            cd "$APP_DIR"
 
-          # Switch to deployment branch or create it
-          git fetch origin deployment
-          git checkout deployment || git checkout --orphan deployment
+            # Fetch latest changes
+            git fetch --all --prune
 
-          # Remove old files
-          git rm -rf . || true
+            # Checkout deployment branch
+            git checkout deployment || git checkout -b deployment
 
-          # Copy build output
-          rsync -av --progress dist/ . --exclude=.git
+            # 🔥 Reset deployment branch to match MAIN branch
+            git reset --hard origin/main
 
-          # Commit and push
-          git add .
-          git commit -m "Deploy dist from main branch"
-          git push origin deployment --force
+            # Install production dependencies
+            npm ci --omit=dev
+
+            # Build frontend
+            npm run build
+
+            # Restart backend using PM2
+            if command -v pm2 >/dev/null 2>&1; then
+              pm2 describe security-council >/dev/null 2>&1 \
+                && pm2 reload security-council \
+                || pm2 start server/index.js --name security-council
+              pm2 save || true
+            else
+              node server/index.js &
+            fi
