@@ -14,8 +14,8 @@ jobs:
         with:
           host: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.FTP_PORT || 22 }}
+          key: ${{ secrets.SSH_KEY}}
+          port: ${{ secrets.FTP_PORT || 21 }}
           script: |
             set -e
 
