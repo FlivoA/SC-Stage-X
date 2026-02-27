@@ -12,7 +12,7 @@ jobs:
       - name: SSH into server and deploy
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: ${{ secrets.SSH_HOST }}
+          host: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_PASSWORD }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.FTP_PORT || 22 }}
