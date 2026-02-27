@@ -13,7 +13,7 @@ jobs:
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_PASSWORD }}
+          username: ${{ secrets.FTP_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.FTP_PORT || 22 }}
           script: |
