@@ -2,7 +2,7 @@ name: CI/CD
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main, deployment]
   pull_request:
     branches: [main]
 
@@ -82,10 +82,10 @@ jobs:
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
 
-      - name: Deploy to deploy branch
+      - name: Deploy to deployment branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist
-          publish_branch: deploy
+          publish_branch: deployment
           keep_files: false
