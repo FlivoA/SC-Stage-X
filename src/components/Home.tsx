@@ -62,14 +62,12 @@ const Home: React.FC = () => (
                         </p>
                         <div className="relative inline-block group max-w-4xl">
 
-                            <h1 className="mt-3 text-[#0A2A57] text-2xl sm:text-4xl md:text-5xl lg:text-[50px] 
-leading-tight lg:leading-[1.1] font-extrabold tracking-[-0.03em] 
-whitespace-nowrap">
-  Enabling Enterprise Security  <br /> Through Structured Standards
-</h1>
+                            <h1 className="mt-3 text-[#0A2A57] text-2xl sm:text-4xl md:text-5xl lg:text-[50px] leading-tight lg:leading-[1.1] font-extrabold tracking-[-0.03em] whitespace-nowrap">
+                                Enabling Enterprise Secuity  <br /> Through Structured Standards
+                            </h1>
 
                             <p className="absolute top-1/2 left-full ml-6 -translate-y-1/2 w-[360px] p-5 rounded-xl shadow-2xl bg-blue-600 text-black text-sm leading-relaxed opacity-0 translate-x-3 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0 pointer-events-none z-40 ">
-   
+
                                 Security Council strengthens organizational security maturity through
                                 education-first awareness programs, structured enablement frameworks,
                                 and independent certification aligned with regulated industry expectations.
@@ -203,7 +201,7 @@ whitespace-nowrap">
 
                                                 {/* Full Paragraph Popup */}
                                                 <p className="absolute left-0 top-full mt-2 w-[280px] p-3 rounded-lg shadow-xl bg-blue-600 text-black text-[13px] leading-relaxed opacity-0 scale-95 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100 pointer-events-none z-40 ">
-    
+
                                                     {card.title}
                                                 </p>
 
