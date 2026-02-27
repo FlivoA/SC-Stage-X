@@ -549,4 +549,6 @@ const NewIntelligentPage: React.FC = () => (
     </main>
 );
 
+
+
 export default NewIntelligentPage;

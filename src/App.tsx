@@ -35,6 +35,13 @@ import InsurancePage from './components/NestedNavbar/InsuranceOrganization';
 import EnterprisePage from './components/NestedNavbar/EnterprisePage';
 import TechnologyPage from './components/NestedNavbar/TechnologyPage';
 import ExecutiveLeadership from './components/NestedNavbar/ExecutiveLeadership';
+// nested navbar pages of our intelligence
+import ThreatAnalysis from './components/NestedNavbar/ThreatAnalysis';
+import ResearchBriefs from './components/NestedNavbar/ResearchBriefs';
+import CredentialReports from './components/NestedNavbar/CredentialReports';
+import IndustryAddessments from './components/NestedNavbar/IndustryAddessments'; 
+import SecurityStudies from './components/NestedNavbar/SecurityStudies';   
+
 
 const App = () => {
     const [currentPage, setCurrentPage] = useState('home');
@@ -80,6 +87,19 @@ const App = () => {
                 return <PrevHome onNavigate={handleNavigate} onBriefingClick={() => setIsBriefingOpen(true)} />;
             case 'our-intelligence':
                 return <NewIntelligentPage />;
+                // nested navbar pages   of our intelligence
+            case 'threat-analysis':
+                return <ThreatAnalysis />;
+            case 'security-maturity':
+                return <SecurityStudies />;
+            case 'industry-risk':
+                return <IndustryAddessments />;
+            case 'credential-exposure':
+                return <CredentialReports />;
+            case 'research-briefs':
+                return <ResearchBriefs />;
+
+                
             case 'who-we-guide':
                 return <NewWhoWeGuidePage />
             case 'who-we-guide/bfsi':
@@ -150,6 +170,7 @@ const App = () => {
         home: { t: 'Security Council – Intelligence That Clarifies', d: 'Independent Cyber Threat Research. Trusted by Leaders. Backed by Analysts.' },
         'prev-home': { t: 'Previous Home – Security Council', d: 'Objective research intelligence and executive guidance to act with confidence.' },
         'our-intelligence': { t: 'Our Intelligence – Security Council', d: 'Explore our methodology, threat domains, and how we deliver clarity.' },
+        'threat-analysis': { t: 'Threat Landscape Analysis – Security Council', d: 'Overview and analysis of the current cyber threat landscape.' },
         'who-we-guide': { t: 'Who We Guide – Security Council', d: 'We guide boards, CISOs, and leaders where context matters most.' },
         'latest-insight': { t: 'Latest Insights – Security Council', d: 'Read our latest research, briefings, and cyber threat insights.' },
         events: { t: 'Events – Security Council', d: 'Upcoming and past events, briefings, and research presentations.' },
