@@ -1,32 +1,54 @@
-name: Build and Deployment React Vite
+name: Deploy to Hostinger (Backend + Frontend)
 
 on:
   push:
-    branches:
-      - main   # when you push dev branch
+    branches: [main]   # 🔥 Trigger when pushing to MAIN branch
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: SSH into server and deploy
+        uses: appleboy/ssh-action@v1.2.0
         with:
-          node-version: 20
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          script: |
+            set -e
 
-      - name: Install Dependencies
-        run: npm install
+            APP_DIR=/var/www/security-council
 
-      - name: Build Project
-        run: npm run build
+            if [ ! -d "$APP_DIR" ]; then
+              echo "App directory $APP_DIR does not exist" >&2
+              exit 1
+            fi
 
-      - name: Deploy dist to deployment branch
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: deployment
+            cd "$APP_DIR"
+
+            # Fetch latest changes
+            git fetch --all --prune
+
+            # Checkout deployment branch
+            git checkout deployment || git checkout -b deployment
+
+            # 🔥 Reset deployment branch to match MAIN branch
+            git reset --hard origin/main
+
+            # Install production dependencies
+            npm ci --omit=dev
+
+            # Build frontend
+            npm run build
+
+            # Restart backend using PM2
+            if command -v pm2 >/dev/null 2>&1; then
+              pm2 describe security-council >/dev/null 2>&1 \
+                && pm2 reload security-council \
+                || pm2 start server/index.js --name security-council
+              pm2 save || true
+            else
+              node server/index.js &
+            fi
