@@ -119,10 +119,10 @@ const Home: React.FC = () => (
                     <div className="relative z-10 flex justify-center lg:block">
                         <div className="block w-full max-w-md sm:max-w-lg rounded-3xl bg-[#041A3F]/95 px-6 py-8 text-white shadow-2xl ring-1 ring-black/20 lg:hidden">
                             <h2 className="text-2xl sm:text-3xl font-extrabold leading-tight tracking-[-0.01em]">
-                                A Structured Approach to Security Maturity
+                                {/* A Structured Approach to Security Maturity */}
                             </h2>
                             <p className="mt-3 text-lg text-white/80">
-                                Security readiness requires more than reactive controls. Security Council provides a structured, advisory-led framework designed to improve awareness, enable capability, and validate preparedness.
+                                {/* Security readiness requires more than reactive controls. Security Council provides a structured, advisory-led framework designed to improve awareness, enable capability, and validate preparedness. */}
                             </p>
                             <div className="mt-6 flex flex-col gap-4">
                                 {heroCards.map((card) => (
@@ -164,13 +164,13 @@ const Home: React.FC = () => (
                                 <div className="relative inline-block group max-w-[420px]">
 
                                     <h2 className="text-white text-[30px] leading-[1.2] font-extrabold tracking-[-0.01em] cursor-pointer">
-                                        A Structured Approach to Security Maturity
+                                        {/* A Structured Approach to Security Maturity */}
                                     </h2>
 
                                     <p className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 w-[320px] p-4 rounded-lg shadow-xl bg-blue-600 text-black text-[13px] opacity-0 scale-95 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100 pointer-events-none ">
-                                        Security readiness requires more than reactive controls.
+                                        {/* Security readiness requires more than reactive controls.
                                         Security Council provides a structured, advisory-led framework
-                                        designed to improve awareness, enable capability, and validate preparedness.
+                                        designed to improve awareness, enable capability, and validate preparedness. */}
                                     </p>
 
                                 </div>
