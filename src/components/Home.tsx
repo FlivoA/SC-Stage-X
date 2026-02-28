@@ -63,7 +63,8 @@ const Home: React.FC = () => (
                         <div className="relative inline-block group max-w-4xl">
 
                             <h1 className="mt-3 text-[#0A2A57] text-2xl sm:text-4xl md:text-5xl lg:text-[50px] leading-tight lg:leading-[1.1] font-extrabold tracking-[-0.03em] whitespace-nowrap">
-                                Enabling Enterprise Securit  <br /> Through Structured Standards
+                                {/* Enabling Enterprise Securit   */}
+                                <br /> Through Structured Standards
                             </h1>
 
                             <p className="absolute top-1/2 left-full ml-6 -translate-y-1/2 w-[360px] p-5 rounded-xl shadow-2xl bg-blue-600 text-black text-sm leading-relaxed opacity-0 translate-x-3 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0 pointer-events-none z-40 ">
