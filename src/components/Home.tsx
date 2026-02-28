@@ -67,12 +67,12 @@ const Home: React.FC = () => (
                                 <br /> Through Structured Standards
                             </h1>
 
-                            <p className="absolute top-1/2 left-full ml-6 -translate-y-1/2 w-[360px] p-5 rounded-xl shadow-2xl bg-blue-600 text-black text-sm leading-relaxed opacity-0 translate-x-3 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0 pointer-events-none z-40 ">
+                            {/* <p className="absolute top-1/2 left-full ml-6 -translate-y-1/2 w-[360px] p-5 rounded-xl shadow-2xl bg-blue-600 text-black text-sm leading-relaxed opacity-0 translate-x-3 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0 pointer-events-none z-40 ">
 
                                 Security Council strengthens organizational security maturity through
                                 education-first awareness programs, structured enablement frameworks,
                                 and independent certification aligned with regulated industry expectations.
-                            </p>
+                            </p> */}
 
                         </div>
 
