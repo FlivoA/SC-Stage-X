@@ -58,7 +58,7 @@ const Home: React.FC = () => (
                 <div className="flex flex-col lg:flex-row h-auto lg:h-[325px] pr-0  sm:pr-6 lg:pr-12 mb-2">
                     <div className="mt-6 mb-4 sm:mt-8 lg:mt-10 max-w-full lg:max-w-[980px] ml-0 lg:-ml-3">
                         <p className="text-[#0A2A57] text-sm sm:text-base md:text-lg lg:text-[22px] leading-tight lg:leading-[1.1] font-extrabold tracking-[-0.01em]">
-                            Enterprise Security Policies Enforcement & Certification Council
+                            {/* Enterprise Security Policies Enforcement & Certification Council */}
                         </p>
                         <div className="relative inline-block group max-w-4xl">
 
