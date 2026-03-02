@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 const reports = [
     {
       title: "BFSI Risk Mapping Study",
@@ -30,6 +32,7 @@ const sectors = [
     { name: "Enterprise", icon: "🏢" },
     { name: "Technology & Product", icon: "⚙️" }
   ];
+
 
 
 const pillars = [

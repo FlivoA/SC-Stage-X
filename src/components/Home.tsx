@@ -1,6 +1,9 @@
 import React from 'react';
 import OptimizedImage from './OptimizedImage';
 
+import { CircleArrowRight } from "lucide-react";
+
+
 const heroCards = [
     {
         heading: 'Security Awareness',
@@ -63,7 +66,7 @@ const Home: React.FC = () => (
                         <div className="relative inline-block group max-w-4xl">
 
                             <h1 className="mt-3 text-[#0A2A57] text-2xl sm:text-4xl md:text-5xl lg:text-[50px] leading-tight lg:leading-[1.1] font-extrabold tracking-[-0.03em] whitespace-nowrap">
-                                Enabling Enterprise Securit  
+                                Enabling Enterprise Securit
                                 <br /> Through Structured Standards
                             </h1>
 
@@ -85,7 +88,7 @@ const Home: React.FC = () => (
                             >
                                 Explore Programs
                                 <span className="translate-y-1px" aria-hidden>
-                                    ↗
+                                    <CircleArrowRight size={16} />
                                 </span>
                             </a>
                             <a
@@ -95,7 +98,7 @@ const Home: React.FC = () => (
                             >
                                 Request Consultation
                                 <span className="translate-y-[1px]" aria-hidden>
-                                    ↗
+                                    <CircleArrowRight size={16} />
                                 </span>
                             </a>
                         </div>
@@ -141,7 +144,7 @@ const Home: React.FC = () => (
                                             className="mt-2 inline-flex items-center text-sm font-semibold text-[#0000D3] hover:underline"
                                         >
                                             {card.cta} <span className="ml-1 translate-y-[1px]" aria-hidden>
-                                                ↗
+                                                <span className="text-lg">→</span>
                                             </span>
                                         </a>
                                     </div>
@@ -212,7 +215,7 @@ const Home: React.FC = () => (
                                                 className="mt-2 inline-flex items-center text-[#0000D3] font-semibold text-sm hover:underline"
                                             >
                                                 {card.cta} <span className="ml-1 translate-y-[1px]" aria-hidden>
-                                                    ↗
+                                                    <span className="text-lg">``+→</span>
                                                 </span>
                                             </a>
                                             <div className="pointer-events-none absolute top-0 right-0 hidden h-full w-[120px] rounded-r-xl bg-gradient-to-r from-transparent to-white/60 lg:block" />
@@ -296,7 +299,7 @@ const Home: React.FC = () => (
                                     href={card.href}
                                     className="mt-4 inline-flex items-center text-sm font-semibold text-[#0000D3] hover:underline"
                                 >
-                                    Read Insight ↗
+                                    Read Insight <CircleArrowRight size={16} />
                                 </a>
                             </div>
                         ))}
@@ -309,7 +312,7 @@ const Home: React.FC = () => (
                             href="#"
                             className="inline-flex items-center gap-3 bg-[#0000D3] text-white px-8 py-4 rounded-md font-semibold shadow-lg hover:bg-blue-800 transition duration-300"
                         >
-                            Explore More Reports ↗
+                            Explore More Reports <CircleArrowRight size={16} />
                         </a>
                     </div>
 
