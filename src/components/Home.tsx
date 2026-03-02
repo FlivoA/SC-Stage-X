@@ -1,7 +1,6 @@
 import React from 'react';
 import OptimizedImage from './OptimizedImage';
-
-import { CircleArrowRight } from "lucide-react";
+import { SquareArrowOutUpRight,CircleArrowRight } from 'lucide-react';
 
 
 const heroCards = [
@@ -215,7 +214,7 @@ const Home: React.FC = () => (
                                                 className="mt-2 inline-flex items-center text-[#0000D3] font-semibold text-sm hover:underline"
                                             >
                                                 {card.cta} <span className="ml-1 translate-y-[1px]" aria-hidden>
-                                                    <span className="text-lg">``+→</span>
+                                                   <SquareArrowOutUpRight size={14}  strokeWidth={3} />
                                                 </span>
                                             </a>
                                             <div className="pointer-events-none absolute top-0 right-0 hidden h-full w-[120px] rounded-r-xl bg-gradient-to-r from-transparent to-white/60 lg:block" />
@@ -299,7 +298,7 @@ const Home: React.FC = () => (
                                     href={card.href}
                                     className="mt-4 inline-flex items-center text-sm font-semibold text-[#0000D3] hover:underline"
                                 >
-                                    Read Insight <CircleArrowRight size={16} />
+                                    Read Insight <span className='ml-2'><SquareArrowOutUpRight size={14} strokeWidth={3} /></span>
                                 </a>
                             </div>
                         ))}
@@ -346,7 +345,7 @@ const Home: React.FC = () => (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
                     {/* Card 1 */}
-                    <div className="group bg-white/70 backdrop-blur-lg p-8 rounded-3xl border border-gray-200 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 text-center">
+                    <div className="group bg-white/70 backdrop-blur-lg p-8 rounded-3xl border border-gray-200 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 text-center hover:text-blue-600">
                         <div className="w-14 h-14 mx-auto mb-6 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 text-xl font-bold">
                             💳
                         </div>
@@ -422,7 +421,7 @@ const Home: React.FC = () => (
                     {/* CTA */}
                     <button className="inline-flex items-center gap-2 bg-[#0000D3] text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300 shadow-md hover:shadow-lg">
                         Learn About Engagement Model
-                        <span className="text-lg">→</span>
+                       < CircleArrowRight size={14}  />
                     </button>
 
                 </div>
