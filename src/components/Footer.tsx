@@ -58,7 +58,7 @@ const Footer: React.FC<FooterProps> = ({onContactClick}) => {
             <div className="space-y-2">
               <h3 className="text-sm font-semibold text-blue-900">About</h3>
               <ul className="space-y-1 text-sm text-blue-900">
-                <li><a href="#" className="hover:text-blue-700 transition">Who we guide</a></li>
+                <li><a href="/who-we-guide" className="hover:text-blue-700 transition">Who we guide</a></li>
                 <li><a href="#" className="hover:text-blue-700 transition">Our Mandate</a></li>
                 <li><a href="#" className="hover:text-blue-700 transition">Governance Principles</a></li>
                 <li><a href="#" className="hover:text-blue-700 transition">Advisory Positioning</a></li>

@@ -184,11 +184,11 @@ const NAV_LINKS = [
     id: 'our-intelligence',
     label: 'Our Intelligence',
     children: [
-      { id: 'threat-analysis', label: 'Threat Landscape Analysis' },
-      { id: 'credential-exposure', label: 'Credential Exposure Reports' },
-      { id: 'industry-risk', label: 'Industry Risk Assessments' },
-      { id: 'security-maturity', label: 'Security Maturity Studies' },
-      { id: 'research-briefs', label: 'Research Briefs' },
+      { id: 'our-intelligence/threat-analysis', label: 'Threat Landscape Analysis' },
+      { id: 'our-intelligence/credential-exposure', label: 'Credential Exposure Reports' },
+      { id: 'our-intelligence/industry-risk', label: 'Industry Risk Assessments' },
+      { id: 'our-intelligence/security-maturity', label: 'Security Maturity Studies' },
+      { id: 'our-intelligence/research-briefs', label: 'Research Briefs' },
     ],
   },
   {
