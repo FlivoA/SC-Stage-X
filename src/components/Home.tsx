@@ -67,12 +67,12 @@ const Home: React.FC = () => (
                                 <br /> Through Structured Standards
                             </h1>
 
-                            {/* <p className="absolute top-1/2 left-full ml-6 -translate-y-1/2 w-[360px] p-5 rounded-xl shadow-2xl bg-blue-600 text-black text-sm leading-relaxed opacity-0 translate-x-3 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0 pointer-events-none z-40 ">
+                            <p className="absolute top-1/2 left-full ml-6 -translate-y-1/2 w-[360px] p-5 rounded-xl shadow-2xl bg-blue-600 text-black text-sm leading-relaxed opacity-0 translate-x-3 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0 pointer-events-none z-40 ">
 
                                 Security Council strengthens organizational security maturity through
                                 education-first awareness programs, structured enablement frameworks,
                                 and independent certification aligned with regulated industry expectations.
-                            </p> */}
+                            </p>
 
                         </div>
 
@@ -168,9 +168,9 @@ const Home: React.FC = () => (
                                     </h2>
 
                                     <p className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 w-[320px] p-4 rounded-lg shadow-xl bg-blue-600 text-black text-[13px] opacity-0 scale-95 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100 pointer-events-none ">
-                                        {/* Security readiness requires more than reactive controls.
+                                        Security readiness requires more than reactive controls.
                                         Security Council provides a structured, advisory-led framework
-                                        designed to improve awareness, enable capability, and validate preparedness. */}
+                                        designed to improve awareness, enable capability, and validate preparedness.
                                     </p>
 
                                 </div>
@@ -458,6 +458,7 @@ const Home: React.FC = () => (
                                 Alignment with recommended governance practices
                             </span>
                         </li>
+
 
                         <li className="flex items-start">
                             <span className="w-2 h-2 mt-2 bg-[#0A2A57] rounded-full mr-3"></span>
