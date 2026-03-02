@@ -53,6 +53,8 @@ import PrivacyPolicy from "./components/Footer/PrivacyPolicy";
 import SearchCareers from "./components/Footer/SearchCareers";
 import OurCulture from "./components/Footer/OurCulture";
 import CareersBlog from "./components/Footer/CareersBlog"
+import TermsOfUse from "./components/Footer/TermsOfUse";
+import CertificationDisclaimer from "./components/Footer/CertificationDisclaimer";
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState("home");
@@ -196,6 +198,10 @@ const App = () => {
         return <OurCulture/>;
       case "careers-blog":
        return <CareersBlog/>;
+      case "terms-of-use":
+        return <TermsOfUse/>
+      case "certification-disclaimer":
+        return <CertificationDisclaimer/>
       default:
         return <Home />;
     }

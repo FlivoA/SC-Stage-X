@@ -91,8 +91,8 @@ const Footer: React.FC<FooterProps> = ({onContactClick}) => {
               <h3 className="text-sm font-semibold text-blue-900">Governance</h3>
               <ul className="space-y-1 text-sm text-blue-900">
                 <li><a href="/privacy-policy" className="hover:text-blue-700 transition">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-blue-700 transition">Terms of Use</a></li>
-                <li><a href="#" className="hover:text-blue-700 transition">Certification Disclaimer</a></li>
+                <li><a href="/terms-of-use" className="hover:text-blue-700 transition">Terms of Use</a></li>
+                <li><a href="/certification-disclaimer" className="hover:text-blue-700 transition">Certification Disclaimer</a></li>
               </ul>
             </div>
 
