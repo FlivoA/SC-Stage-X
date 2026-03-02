@@ -119,7 +119,7 @@ const Home: React.FC = () => (
                     <div className="relative z-10 flex justify-center lg:block">
                         <div className="block w-full max-w-md sm:max-w-lg rounded-3xl bg-[#041A3F]/95 px-6 py-8 text-white shadow-2xl ring-1 ring-black/20 lg:hidden">
                             <h2 className="text-2xl sm:text-3xl font-extrabold leading-tight tracking-[-0.01em]">
-                                {/* A Structured Approach to Security Maturity */}
+                                A Structured Approach to Security Maturity
                             </h2>
                             <p className="mt-3 text-lg text-white/80">
                                 Security readiness requires more than reactive controls. Security Council provides a structured, advisory-led framework designed to improve awareness, enable capability, and validate preparedness.
