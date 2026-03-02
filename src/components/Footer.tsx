@@ -59,9 +59,9 @@ const Footer: React.FC<FooterProps> = ({onContactClick}) => {
               <h3 className="text-sm font-semibold text-blue-900">About</h3>
               <ul className="space-y-1 text-sm text-blue-900">
                 <li><a href="/who-we-guide" className="hover:text-blue-700 transition">Who we guide</a></li>
-                <li><a href="#" className="hover:text-blue-700 transition">Our Mandate</a></li>
-                <li><a href="#" className="hover:text-blue-700 transition">Governance Principles</a></li>
-                <li><a href="#" className="hover:text-blue-700 transition">Advisory Positioning</a></li>
+                <li><a href="/our-mandate" className="hover:text-blue-700 transition">Our Mandate</a></li>
+                <li><a href="/governance-principles" className="hover:text-blue-700 transition">Governance Principles</a></li>
+                <li><a href="/advisory-positioning" className="hover:text-blue-700 transition">Advisory Positioning</a></li>
               </ul>
             </div>
 
@@ -69,9 +69,9 @@ const Footer: React.FC<FooterProps> = ({onContactClick}) => {
             <div className="space-y-2">
               <h3 className="text-sm font-semibold text-blue-900">Programs</h3>
               <ul className="space-y-1 text-sm text-blue-900">
-                <li><a href="#" className="hover:text-blue-700 transition">Research & Analysis</a></li>
-                <li><a href="#" className="hover:text-blue-700 transition">Industry Perspectives</a></li>
-                <li><a href="#" className="hover:text-blue-700 transition" onClick={(e) => { e.preventDefault(); if(onContactClick) onContactClick(); }}>Briefings</a></li>
+                <li><a href="/research-and-analysis" className="hover:text-blue-700 transition">Research & Analysis</a></li>
+                <li><a href="/industry-perspectives" className="hover:text-blue-700 transition">Industry Perspectives</a></li>
+                <li><a href="/briefings" className="hover:text-blue-700 transition" onClick={(e) => { e.preventDefault(); if(onContactClick) onContactClick(); }}>Briefings</a></li>
               </ul>
             </div>
 
@@ -79,10 +79,10 @@ const Footer: React.FC<FooterProps> = ({onContactClick}) => {
             <div className="space-y-2">
               <h3 className="text-sm font-semibold text-blue-900">Insights</h3>
               <ul className="space-y-1 text-sm text-blue-900">
-                <li><a href="#" className="hover:text-blue-700 transition">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-blue-700 transition">Search Careers</a></li>
-                <li><a href="#" className="hover:text-blue-700 transition">Our Culture</a></li>
-                <li><a href="#" className="hover:text-blue-700 transition">Careers Blog</a></li>
+                <li><a href="/privacy-policy" className="hover:text-blue-700 transition">Privacy Policy</a></li>
+                <li><a href="/search-careers" className="hover:text-blue-700 transition">Search Careers</a></li>
+                <li><a href="/our-culture" className="hover:text-blue-700 transition">Our Culture</a></li>
+                <li><a href="/careers-blog" className="hover:text-blue-700 transition">Careers Blog</a></li>
               </ul>
             </div>
 
@@ -90,7 +90,7 @@ const Footer: React.FC<FooterProps> = ({onContactClick}) => {
             <div className="space-y-2">
               <h3 className="text-sm font-semibold text-blue-900">Governance</h3>
               <ul className="space-y-1 text-sm text-blue-900">
-                <li><a href="#" className="hover:text-blue-700 transition">Privacy Policy</a></li>
+                <li><a href="/privacy-policy" className="hover:text-blue-700 transition">Privacy Policy</a></li>
                 <li><a href="#" className="hover:text-blue-700 transition">Terms of Use</a></li>
                 <li><a href="#" className="hover:text-blue-700 transition">Certification Disclaimer</a></li>
               </ul>

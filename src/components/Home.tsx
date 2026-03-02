@@ -405,7 +405,7 @@ const Home: React.FC = () => (
                 <div className="bg-white shadow-xl rounded-3xl p-10 md:p-14 border border-gray-100">
 
                     <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-6 max-w-3xl mx-auto">
-                        Security Council operates through a structured subscription engagement model,
+                        Security Council operates through a structured engagement model,
                         providing continuous access to awareness resources, training programs,
                         advisory assessments, and certification lifecycle support.
                     </p>

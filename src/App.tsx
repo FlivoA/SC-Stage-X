@@ -42,6 +42,18 @@ import CredentialReports from "./components/NestedNavbar/CredentialReports";
 import IndustryAddessments from "./components/NestedNavbar/IndustryAddessments";
 import SecurityStudies from "./components/NestedNavbar/SecurityStudies";
 
+// footer pages
+import OurMandate from "./components/Footer/OurMandate";
+import GovernancePrinciples from "./components/Footer/GovernancePrinciples";
+import AdvisoryPositioning from "./components/Footer/AdvisoryPositioning";
+import ResearchAnalysis from "./components/Footer/ResearchAnalysis";
+import IndustryPerspectives from "./components/Footer/IndustryPerspectives";
+import Briefings from "./components/Footer/Briefings";
+import PrivacyPolicy from "./components/Footer/PrivacyPolicy";
+import SearchCareers from "./components/Footer/SearchCareers";
+import OurCulture from "./components/Footer/OurCulture";
+import CareersBlog from "./components/Footer/CareersBlog"
+
 const App = () => {
   const [currentPage, setCurrentPage] = useState("home");
   const [isAtTop, setIsAtTop] = useState(true);
@@ -164,6 +176,26 @@ const App = () => {
         );
       case "old-our-intelligence":
         return <OurIntelligencePage />;
+      case "our-mandate":
+        return <OurMandate/>;
+      case "governance-principles":
+        return <GovernancePrinciples/>;
+      case "advisory-positioning":
+        return <AdvisoryPositioning/>;
+      case "research-and-analysis":
+        return <ResearchAnalysis/>;
+      case "industry-perspectives":
+        return <IndustryPerspectives/>;
+      case "briefings":
+        return <Briefings/>;
+      case "privacy-policy":
+        return <PrivacyPolicy/>;
+      case "search-careers":
+        return <SearchCareers/>;
+      case "our-culture":
+        return <OurCulture/>;
+      case "careers-blog":
+       return <CareersBlog/>;
       default:
         return <Home />;
     }
