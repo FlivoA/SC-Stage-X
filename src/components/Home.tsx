@@ -63,7 +63,7 @@ const Home: React.FC = () => (
                         <div className="relative inline-block group max-w-4xl">
 
                             <h1 className="mt-3 text-[#0A2A57] text-2xl sm:text-4xl md:text-5xl lg:text-[50px] leading-tight lg:leading-[1.1] font-extrabold tracking-[-0.03em] whitespace-nowrap">
-                                {/* Enabling Enterprise Securit   */}
+                                Enabling Enterprise Securit  
                                 <br /> Through Structured Standards
                             </h1>
 
