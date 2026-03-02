@@ -1,23 +1,23 @@
 import React from 'react';
-import { 
-  Fingerprint, 
-  Activity, 
-  ChevronRight, 
-  Users, 
-  Key, 
-  RefreshCw, 
-  ShieldCheck, 
-  Globe, 
-  Code2, 
-  CloudCog, 
-  ArrowRight, 
-  FileBarChart, 
-  Zap, 
-  Download, 
-  Lock, 
-  Target, 
-  TrendingUp, 
-  Layout 
+import {
+  Fingerprint,
+  Activity,
+  ChevronRight,
+  Users,
+  Key,
+  RefreshCw,
+  ShieldCheck,
+  Globe,
+  Code2,
+  CloudCog,
+  ArrowRight,
+  FileBarChart,
+  Zap,
+  Download,
+  Lock,
+  Target,
+  TrendingUp,
+  Layout
 } from 'lucide-react';
 
 const programs = [
@@ -94,60 +94,80 @@ const domains = [
 const CredentialReports: React.FC = () => (
   <main className="bg-white min-h-screen">
     {/* HERO SECTION */}
-    <section className="relative min-h-[70vh] flex items-center bg-slate-950 overflow-hidden font-sans">
-      <div className="absolute top-0 left-0 w-full h-full opacity-30 pointer-events-none">
-        <div className="absolute top-[-10%] left-[-10%] w-[45%] h-[45%] bg-blue-600 rounded-full blur-[120px]"></div>
-        <div className="absolute bottom-[-5%] right-[-5%] w-[35%] h-[35%] bg-indigo-900 rounded-full blur-[100px]"></div>
+    <section className="relative min-h-screen bg-slate-950 flex items-center justify-center overflow-hidden font-sans px-6">
+
+      {/* Background Glow */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-[-15%] left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-600/30 rounded-full blur-[160px]"></div>
+        <div className="absolute bottom-[-20%] right-[-10%] w-[400px] h-[400px] bg-indigo-700/30 rounded-full blur-[140px]"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase mb-8">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-              </span>
-              Security Council Intelligence
-            </div>
-            <h1 className="text-5xl md:text-7xl font-black text-white leading-[1.05] mb-6 tracking-tight">
-              Credential <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400">
-                Exposure Intelligence
-              </span>
-            </h1>
-            <p className="text-xl text-slate-400 max-w-2xl leading-relaxed mb-10 mx-auto lg:mx-0">
-              Structured analysis of identity-based risk, credential compromise trends, and access governance failures across industries.
-            </p>
-            <div className="flex flex-wrap justify-center lg:justify-start gap-5">
-              <button className="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)] flex items-center gap-2 group">
-                View Intelligence Report
-                <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
-              </button>
-              <div className="hidden md:flex items-center gap-4 px-6 border-l border-slate-800">
-                <Activity className="text-slate-500" size={24} />
-                <div>
-                  <p className="text-white font-bold leading-none">Real-Time</p>
-                  <p className="text-slate-500 text-[10px] uppercase font-bold tracking-tighter mt-1">Threat Mapping</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="relative group">
-            <div className="relative z-10 bg-slate-900/40 backdrop-blur-xl border border-slate-800 rounded-3xl p-2 shadow-2xl overflow-hidden">
-              <div className="rounded-2xl overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=1000" alt="Dashboard" className="w-full h-[400px] object-cover opacity-60 group-hover:scale-105 transition-transform duration-1000" />
-              </div>
-              <div className="absolute top-8 right-8 bg-slate-950/80 backdrop-blur-md border border-slate-700 p-4 rounded-xl shadow-xl">
-                <div className="flex items-center gap-3 mb-2">
-                  <Fingerprint className="text-blue-400" size={18} />
-                  <span className="text-xs font-bold text-white uppercase tracking-wider">Identity Risk</span>
-                </div>
-                <div className="text-2xl font-black text-red-500">CRITICAL</div>
-              </div>
+      <div className="relative z-10 max-w-5xl mx-auto text-center">
+
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase mb-8">
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+          </span>
+          Security Council Intelligence
+        </div>
+
+        {/* Heading */}
+        <h1 className="text-5xl md:text-7xl font-black text-white leading-[1.1] tracking-tight mb-6">
+          Credential
+          <br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400">
+            Exposure Intelligence
+          </span>
+        </h1>
+
+        {/* Paragraph */}
+        <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed mb-10">
+          Structured analysis of identity-based risk, credential compromise trends,
+          and access governance failures across industries.
+        </p>
+
+        {/* CTA */}
+        <div className="flex justify-center gap-6 mb-16 flex-wrap">
+          <button className="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition-all shadow-[0_0_30px_rgba(37,99,235,0.4)] flex items-center gap-2 group">
+            View Intelligence Report
+            <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+          </button>
+
+          <div className="flex items-center gap-3 px-6 border-l border-slate-800">
+            <Activity className="text-slate-500" size={24} />
+            <div className="text-left">
+              <p className="text-white font-bold leading-none">Real-Time</p>
+              <p className="text-slate-500 text-[10px] uppercase font-bold tracking-wider mt-1">
+                Threat Mapping
+              </p>
             </div>
           </div>
         </div>
+
+        {/* Dashboard Image */}
+        <div className="relative group">
+          <div className="bg-slate-900/40 backdrop-blur-xl border border-slate-800 rounded-3xl p-3 shadow-2xl overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=1000"
+              alt="Dashboard"
+              className="w-full h-[450px] object-cover rounded-2xl opacity-70 group-hover:scale-105 transition-transform duration-1000"
+            />
+          </div>
+
+          {/* Floating Risk Card */}
+          <div className="absolute -top-6 right-6 bg-slate-950/90 backdrop-blur-md border border-slate-700 p-5 rounded-2xl shadow-xl">
+            <div className="flex items-center gap-3 mb-2">
+              <Fingerprint className="text-blue-400" size={18} />
+              <span className="text-xs font-bold text-white uppercase tracking-wider">
+                Identity Risk
+              </span>
+            </div>
+            <div className="text-3xl font-black text-red-500">CRITICAL</div>
+          </div>
+        </div>
+
       </div>
     </section>
 
