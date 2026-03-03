@@ -1,35 +1,58 @@
-import React from 'react';
+import React from "react";
 
 type FooterProps = {
   onContactClick?: () => void;
 };
 
-const Footer: React.FC<FooterProps> = ({onContactClick}) => { 
+const Footer: React.FC<FooterProps> = ({ onContactClick }) => {
   return (
     <footer className="bg-gray-100">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-12 px-4 py-14 sm:px-6">
         <div className="flex flex-col gap-6 border-b border-[#D9D9D9] pb-8 lg:flex-row lg:items-center lg:justify-between">
-          <h2 className="text-2xl font-bold text-blue-900 sm:text-3xl">Security Council</h2>
+          <h2 className="text-2xl font-bold text-blue-900 sm:text-3xl">
+            Security Council
+          </h2>
           <div className="flex flex-wrap items-center gap-3 text-blue-900">
             {/* YouTube */}
-            <a href="#" aria-label="YouTube" className="text-blue-900 hover:text-blue-700">
+            <a
+              href="#"
+              aria-label="YouTube"
+              className="text-blue-900 hover:text-blue-700"
+            >
               <svg className="w-9 h-9" fill="currentColor" viewBox="0 0 36 37">
                 <circle cx="18" cy="18.43" r="18" fill="#002856" />
-                <path d="M23.3398 12.6741H12.3661C12.3661 12.6741 9.48151 12.6741 9.48151 15.5601V21.5468C9.48151 21.5468 9.48151 24.432 12.3661 24.432H23.3398C23.3398 24.432 26.2264 24.432 26.2264 21.5468V15.5601C26.2264 15.5601 26.2264 12.6741 23.3398 12.6741ZM15.6226 21.7816V15.3407L21.105 18.5611L15.6226 21.7816Z" fill="white" />
+                <path
+                  d="M23.3398 12.6741H12.3661C12.3661 12.6741 9.48151 12.6741 9.48151 15.5601V21.5468C9.48151 21.5468 9.48151 24.432 12.3661 24.432H23.3398C23.3398 24.432 26.2264 24.432 26.2264 21.5468V15.5601C26.2264 15.5601 26.2264 12.6741 23.3398 12.6741ZM15.6226 21.7816V15.3407L21.105 18.5611L15.6226 21.7816Z"
+                  fill="white"
+                />
               </svg>
             </a>
             {/* Twitter/X */}
-            <a href="#" aria-label="Twitter" className="text-blue-900 hover:text-blue-700">
+            <a
+              href="#"
+              aria-label="Twitter"
+              className="text-blue-900 hover:text-blue-700"
+            >
               <svg className="w-9 h-9" fill="currentColor" viewBox="0 0 37 37">
                 <circle cx="18.5" cy="18.43" r="18" fill="#002856" />
-                <path d="M27.069 9.82031H25.4585L19.6931 16.0459L15.0374 9.82031H9.56299L16.6683 19.3211L9.51562 27.0489H11.1262L17.3855 20.2887L22.4472 27.0489H27.9216L20.4171 17.0135L27.0758 9.82031H27.069ZM23.0359 25.8579L11.9246 11.0045H14.4419L25.5532 25.8579H23.0359Z" fill="white" />
+                <path
+                  d="M27.069 9.82031H25.4585L19.6931 16.0459L15.0374 9.82031H9.56299L16.6683 19.3211L9.51562 27.0489H11.1262L17.3855 20.2887L22.4472 27.0489H27.9216L20.4171 17.0135L27.0758 9.82031H27.069ZM23.0359 25.8579L11.9246 11.0045H14.4419L25.5532 25.8579H23.0359Z"
+                  fill="white"
+                />
               </svg>
             </a>
             {/* LinkedIn */}
-            <a href="#" aria-label="LinkedIn" className="text-blue-900 hover:text-blue-700">
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              className="text-blue-900 hover:text-blue-700"
+            >
               <svg className="w-9 h-9" fill="currentColor" viewBox="0 0 37 37">
                 <circle cx="18.5" cy="18.43" r="18" fill="#002856" />
-                <path d="M10.2443 25.7856H13.6276V14.9593H10.2443V25.7856ZM11.8495 13.6035H11.8251C10.6011 13.6035 9.80714 12.7761 9.80714 11.7283C9.80714 10.6586 10.6242 9.84793 11.8733 9.84793C13.1204 9.84793 13.8886 10.656 13.9124 11.7251C13.9131 12.7729 13.1211 13.6035 11.8495 13.6035ZM27.1611 25.7856H23.3251V20.1831C23.3251 18.7161 22.7266 17.7159 21.4062 17.7159C20.3976 17.7159 19.8364 18.3909 19.5754 19.0421C19.4776 19.2748 19.4924 19.5994 19.4924 19.9273V25.7863H15.6925C15.6925 25.7863 15.742 15.8612 15.6925 14.9593H19.4924V16.6577C19.7168 15.9146 20.9305 14.8532 22.8687 14.8532C25.2724 14.8532 27.1611 16.4115 27.1611 19.7653V25.7856Z" fill="white" />
+                <path
+                  d="M10.2443 25.7856H13.6276V14.9593H10.2443V25.7856ZM11.8495 13.6035H11.8251C10.6011 13.6035 9.80714 12.7761 9.80714 11.7283C9.80714 10.6586 10.6242 9.84793 11.8733 9.84793C13.1204 9.84793 13.8886 10.656 13.9124 11.7251C13.9131 12.7729 13.1211 13.6035 11.8495 13.6035ZM27.1611 25.7856H23.3251V20.1831C23.3251 18.7161 22.7266 17.7159 21.4062 17.7159C20.3976 17.7159 19.8364 18.3909 19.5754 19.0421C19.4776 19.2748 19.4924 19.5994 19.4924 19.9273V25.7863H15.6925C15.6925 25.7863 15.742 15.8612 15.6925 14.9593H19.4924V16.6577C19.7168 15.9146 20.9305 14.8532 22.8687 14.8532C25.2724 14.8532 27.1611 16.4115 27.1611 19.7653V25.7856Z"
+                  fill="white"
+                />
               </svg>
             </a>
             {/* Facebook
@@ -50,18 +73,44 @@ const Footer: React.FC<FooterProps> = ({onContactClick}) => {
         </div>
 
         <div className="max-w-7xl mx-auto py-12 px-6 flex flex-col lg:flex-row lg:justify-between gap-8">
-
           {/* Left: All 4 sections in one horizontal line */}
           <div className="flex flex-col sm:flex-row lg:flex-row lg:gap-12 w-full lg:w-3/4 justify-between">
-
             {/* About */}
             <div className="space-y-2">
               <h3 className="text-sm font-semibold text-blue-900">About</h3>
               <ul className="space-y-1 text-sm text-blue-900">
-                <li><a href="/who-we-guide" className="hover:text-blue-700 transition">Who we guide</a></li>
-                <li><a href="/our-mandate" className="hover:text-blue-700 transition">Our Mandate</a></li>
-                <li><a href="/governance-principles" className="hover:text-blue-700 transition">Governance Principles</a></li>
-                <li><a href="/advisory-positioning" className="hover:text-blue-700 transition">Advisory Positioning</a></li>
+                <li>
+                  <a
+                    href="/who-we-guide"
+                    className="hover:text-blue-700 transition"
+                  >
+                    Who we guide
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/our-mandate"
+                    className="hover:text-blue-700 transition"
+                  >
+                    Our Mandate
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/governance-principles"
+                    className="hover:text-blue-700 transition"
+                  >
+                    Governance Principles
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/advisory-positioning"
+                    className="hover:text-blue-700 transition"
+                  >
+                    Advisory Positioning
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -69,9 +118,31 @@ const Footer: React.FC<FooterProps> = ({onContactClick}) => {
             <div className="space-y-2">
               <h3 className="text-sm font-semibold text-blue-900">Programs</h3>
               <ul className="space-y-1 text-sm text-blue-900">
-                <li><a href="/research-and-analysis" className="hover:text-blue-700 transition">Research & Analysis</a></li>
-                <li><a href="/industry-perspectives" className="hover:text-blue-700 transition">Industry Perspectives</a></li>
-                <li><a href="/briefings" className="hover:text-blue-700 transition" onClick={(e) => { e.preventDefault(); if(onContactClick) onContactClick(); }}>Briefings</a></li>
+                <li>
+                  <a
+                    href="/research-and-analysis"
+                    className="hover:text-blue-700 transition"
+                  >
+                    Research & Analysis
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/industry-perspectives"
+                    className="hover:text-blue-700 transition"
+                  >
+                    Industry Perspectives
+                  </a>
+                </li>
+                {/* <li><a href="/briefings" className="hover:text-blue-700 transition" onClick={(e) => { e.preventDefault(); if(onContactClick) onContactClick(); }}>Briefings</a></li> */}
+                <li>
+                  <a
+                    href="/briefings"
+                    className="hover:text-blue-700 transition"
+                  >
+                    Briefings
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -79,29 +150,82 @@ const Footer: React.FC<FooterProps> = ({onContactClick}) => {
             <div className="space-y-2">
               <h3 className="text-sm font-semibold text-blue-900">Insights</h3>
               <ul className="space-y-1 text-sm text-blue-900">
-                <li><a href="/privacy-policy" className="hover:text-blue-700 transition">Privacy Policy</a></li>
-                <li><a href="/search-careers" className="hover:text-blue-700 transition">Search Careers</a></li>
-                <li><a href="/our-culture" className="hover:text-blue-700 transition">Our Culture</a></li>
-                <li><a href="/careers-blog" className="hover:text-blue-700 transition">Careers Blog</a></li>
+                <li>
+                  <a
+                    href="/privacy-policy"
+                    className="hover:text-blue-700 transition"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/search-careers"
+                    className="hover:text-blue-700 transition"
+                  >
+                    Search Careers
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/our-culture"
+                    className="hover:text-blue-700 transition"
+                  >
+                    Our Culture
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/careers-blog"
+                    className="hover:text-blue-700 transition"
+                  >
+                    Careers Blog
+                  </a>
+                </li>
               </ul>
             </div>
 
             {/* Governance */}
             <div className="space-y-2">
-              <h3 className="text-sm font-semibold text-blue-900">Governance</h3>
+              <h3 className="text-sm font-semibold text-blue-900">
+                Governance
+              </h3>
               <ul className="space-y-1 text-sm text-blue-900">
-                <li><a href="/privacy-policy" className="hover:text-blue-700 transition">Privacy Policy</a></li>
-                <li><a href="/terms-of-use" className="hover:text-blue-700 transition">Terms of Use</a></li>
-                <li><a href="/certification-disclaimer" className="hover:text-blue-700 transition">Certification Disclaimer</a></li>
+                <li>
+                  <a
+                    href="/privacy-policy"
+                    className="hover:text-blue-700 transition"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/terms-of-use"
+                    className="hover:text-blue-700 transition"
+                  >
+                    Terms of Use
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/certification-disclaimer"
+                    className="hover:text-blue-700 transition"
+                  >
+                    Certification Disclaimer
+                  </a>
+                </li>
+                <li><a href="/briefings" className="hover:text-blue-700 transition" onClick={(e) => { e.preventDefault(); if(onContactClick) onContactClick(); }}>Contact Us</a></li>
               </ul>
             </div>
-
           </div>
 
           {/* Right: Latest Insights / Newsletter */}
           <div className="lg:w-1/4 bg-white p-6 rounded-2xl shadow-md flex flex-col justify-between">
             <div>
-              <h4 className="text-sm font-semibold text-blue-900">Latest Insights</h4>
+              <h4 className="text-sm font-semibold text-blue-900">
+                Latest Insights
+              </h4>
               <p className="mt-2 text-sm text-blue-900/80">
                 Subscribe for curated intelligence briefs and executive updates.
               </p>
@@ -113,14 +237,23 @@ const Footer: React.FC<FooterProps> = ({onContactClick}) => {
               Join the Briefing List
             </button>
           </div>
-
         </div>
-
 
         <div className="flex flex-col gap-4 border-t border-[#D9D9D9] pt-6 text-xs text-gray-600 sm:flex-row sm:items-center sm:justify-between sm:text-sm">
           <div className="flex flex-wrap items-center gap-4">
-            {['Policies', 'Privacy Policy', 'Terms of Use', 'Ombuds', 'Site Map', 'Glossary'].map((item) => (
-              <a key={item} href="#" className="uppercase tracking-wide hover:text-blue-700">
+            {[
+              "Policies",
+              "Privacy Policy",
+              "Terms of Use",
+              "Ombuds",
+              "Site Map",
+              "Glossary",
+            ].map((item) => (
+              <a
+                key={item}
+                href="#"
+                className="uppercase tracking-wide hover:text-blue-700"
+              >
                 {item}
               </a>
             ))}
