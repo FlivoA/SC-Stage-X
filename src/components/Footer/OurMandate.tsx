@@ -1,40 +1,45 @@
 import React from "react";
 
 const OurMandate: React.FC = () => {
-  const mandates = [
-    "Advancing structured security awareness across regulated and enterprise sectors",
-    "Developing measurable maturity frameworks",
-    "Providing sector-neutral intelligence insights",
-    "Establishing certification pathways aligned with governance standards",
-    "Promoting long-term resilience through structured enablement",
+  const sections = [
+    "Provide unbiased, high-caliber research and analysis that demystifies complex data ecosystems",
+    "Deliver actionable industry perspectives and briefings that keep decision-makers ahead of regulatory shifts and emerging risks",
+    "Offer independent advisory positioning that aligns privacy excellence with business objectives",
   ];
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 px-6 py-16">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-semibold mb-6">Our Mandate</h1>
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-900 px-6 py-20">
+      <div className="max-w-6xl mx-auto">
+        {/* Hero Section */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-semibold mb-6 text-blue-900">
+            Our Mandate
+          </h1>
+          <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto">
+            Our core mandate is simple yet powerful: to champion principled,
+            pragmatic privacy governance that protects individuals while
+            enabling responsible innovation.
+          </p>
+        </div>
 
-        <p className="text-lg text-gray-600 leading-relaxed mb-10">
-          Security Council operates as an independent research-led awareness
-          and certification body dedicated to strengthening institutional
-          security governance.
-        </p>
-
-        <div className="space-y-4">
-          {mandates.map((item, index) => (
+        {/* Mandate Pillars */}
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          {sections.map((item, index) => (
             <div
               key={index}
-              className="border border-gray-200 rounded-xl p-5 bg-gray-50"
+              className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg transition duration-300 "
             >
-              {item}
+              <p className="text-gray-700 leading-relaxed">{item}</p>
             </div>
           ))}
         </div>
 
-        <div className="mt-14 pt-6 border-t border-gray-200">
-          <p className="text-sm text-gray-500 leading-relaxed">
-            We do not implement technical systems or resell vendor products.
-            Our role is advisory, analytical, and standards-driven.
+        {/* Closing Philosophy */}
+        <div className="bg-white border border-gray-200 rounded-2xl p-10 shadow-sm text-center max-w-4xl mx-auto">
+          <p className="text-gray-700 leading-relaxed">
+            We believe strong governance isn't about restriction — it's about
+            building resilience, fostering trust, and unlocking long-term value
+            in a data-driven world.
           </p>
         </div>
       </div>
