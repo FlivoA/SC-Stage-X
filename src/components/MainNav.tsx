@@ -195,22 +195,22 @@ const NAV_LINKS = [
     id: 'latest-insight',
     label: 'Latest Insight',
     children: [
-      { id: 'featured-reports', label: 'Featured Reports' },
-      { id: 'publications', label: 'Publications' },
-      { id: 'advisory', label: 'Advisory Notes' },
-      { id: 'case-studies', label: 'Case Studies' },
-      { id: 'news', label: 'News & Announcements' },
+      { id: 'latest-insight/featured-reports', label: 'Featured Reports' },
+      { id: 'latest-insight/publications', label: 'Publications' },
+      { id: 'latest-insight/advisory', label: 'Advisory Notes' },
+      { id: 'latest-insight/case-studies', label: 'Case Studies' },
+      { id: 'latest-insight/news', label: 'News & Announcements' },
     ],
   },
   {
     id: 'events',
     label: 'Programs',
     children: [
-      { id: 'security-awareness', label: 'Security Awareness Programs' },
-      { id: 'developer-training', label: 'Developer Security Training' },
-      { id: 'workforce', label: 'Workforce Enablement' },
-      { id: 'bgv', label: 'Background Verification (BGV) Guidance' },
-      { id: 'advisory-engagement', label: 'Advisory Engagement' },
+      { id: 'programs/security-awareness', label: 'Security Awareness Programs' },
+      { id: 'programs/developer-training', label: 'Developer Security Training' },
+      { id: 'programs/workforce', label: 'Workforce Enablement' },
+      { id: 'programs/bgv', label: 'Background Verification (BGV) Guidance' },
+      { id: 'programs/advisory-engagement', label: 'Advisory Engagement' },
     ],
   },
   {
@@ -250,3 +250,7 @@ const NAV_LINKS = [
 ];
 
 export default MainNav;
+
+
+
+

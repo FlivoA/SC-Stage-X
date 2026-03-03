@@ -3,30 +3,32 @@ import OptimizedImage from './OptimizedImage';
 import { SquareArrowOutUpRight,CircleArrowRight } from 'lucide-react';
 
 
+
 const heroCards = [
     {
         heading: 'Security Awareness',
         title: 'Industry-focused education addressing root causes of data exposure, governance gaps, and operational risk.',
-        href: '#',
+        href: '/programs/security-awareness',
         cta: 'Learn More'
+
     },
     {
         heading: 'Training & Enablement ',
         title: 'Developer and workforce training aligned with secure development lifecycle (SDLC) practices and regulatory expectations. ',
-        href: '#',
+        href: '/training-enablement',
         cta: 'View Programs '
 
     },
     {
         heading: 'Maturity Assessment',
         title: 'Advisory security maturity evaluation framework enabling organizations to identify capability gaps and improvement pathways.',
-        href: '#',
+        href: '/maturity-assessment',
         cta: 'Explore Framework'
     },
     {
         heading: 'Certification Framework',
         title: 'Independent certification indicating structured alignment with defined security standards and governance practices.',
-        href: '#',
+        href: '/certification-framework',
         cta: 'View Certification'
     },
 ];
@@ -90,6 +92,7 @@ const Home: React.FC = () => (
                                     <CircleArrowRight size={16} />
                                 </span>
                             </a>
+                            
                             <a
                                 href="#"
                                 className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-md bg-[#0000D3] px-5 py-3 text-sm sm:text-base font-semibold text-white shadow-sm ring-1 ring-black/5 transition-colors hover:bg-blue-800"

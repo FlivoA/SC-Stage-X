@@ -42,6 +42,18 @@ import CredentialReports from "./components/NestedNavbar/CredentialReports";
 import IndustryAddessments from "./components/NestedNavbar/IndustryAddessments";
 import SecurityStudies from "./components/NestedNavbar/SecurityStudies";
 
+// nested navbar pages of latest-insight
+
+import FeaturedReports from "./components/NestedNavbar/FeaturedReports";
+import Publications from "./components/NestedNavbar/Publications";
+import AdviseryNotes from "./components/NestedNavbar/AdviseryNotes";  
+// import caseStudies from "./components/NestedNavbar/CaseStudies";  
+import News from "./components/NestedNavbar/News";
+
+
+
+
+
 // footer pages
 import OurMandate from "./components/Footer/OurMandate";
 import GovernancePrinciples from "./components/Footer/GovernancePrinciples";
@@ -55,6 +67,12 @@ import OurCulture from "./components/Footer/OurCulture";
 import CareersBlog from "./components/Footer/CareersBlog"
 import TermsOfUse from "./components/Footer/TermsOfUse";
 import CertificationDisclaimer from "./components/Footer/CertificationDisclaimer";
+import CaseStudies from "./components/NestedNavbar/CaseStudies";
+import SecurityAwareness from "./components/Homepage/Herosection/SecurityAwareness";
+import TrainingEnablement from "./components/Homepage/Herosection/TrainingEnablement";
+import MaturityAssessment from "./components/Homepage/Herosection/MaturityAssessment";
+import CertificationFramework from "./components/Homepage/Herosection/CertificationFramework";
+
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState("home");
@@ -133,6 +151,16 @@ const App = () => {
       //     return <About />;
       case "latest-insight":
         return <LatestInsightPage onNavigate={handleNavigate} />;
+      case "latest-insight/featured-reports":
+        return <FeaturedReports />;
+      case "latest-insight/news":
+        return <News />;
+      case "latest-insight/publications":
+        return <Publications />;
+      case "latest-insight/advisory":
+        return <AdviseryNotes />;
+      case "latest-insight/case-studies":
+        return <CaseStudies />;
       case "insight-1":
         return <Insight1Page />;
       case "insight-2":
@@ -202,6 +230,14 @@ const App = () => {
         return <TermsOfUse/>
       case "certification-disclaimer":
         return <CertificationDisclaimer/>
+      case "programs/security-awareness":
+        return <SecurityAwareness />;
+      case "training-enablement":
+        return <TrainingEnablement />
+      case "maturity-assessment":
+        return <MaturityAssessment/>
+      case "certification-framework":
+        return <CertificationFramework/>
       default:
         return <Home />;
     }
@@ -315,3 +351,4 @@ const App = () => {
 };
 
 export default App;
+
