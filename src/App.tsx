@@ -35,12 +35,16 @@ import InsurancePage from "./components/NestedNavbar/InsuranceOrganization";
 import EnterprisePage from "./components/NestedNavbar/EnterprisePage";
 import TechnologyPage from "./components/NestedNavbar/TechnologyPage";
 import ExecutiveLeadership from "./components/NestedNavbar/ExecutiveLeadership";
+
+
 // nested navbar pages of our intelligence
 import ThreatAnalysis from "./components/NestedNavbar/ThreatAnalysis";
 import ResearchBriefs from "./components/NestedNavbar/ResearchBriefs";
 import CredentialReports from "./components/NestedNavbar/CredentialReports";
 import IndustryAddessments from "./components/NestedNavbar/IndustryAddessments";
 import SecurityStudies from "./components/NestedNavbar/SecurityStudies";
+
+
 
 // nested navbar pages of latest-insight
 

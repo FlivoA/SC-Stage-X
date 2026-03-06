@@ -1173,3 +1173,10 @@ body {
 .session-title {
   font-size: 15px;
 }
+
+
+:root {
+  --color-primary: #0000D3;
+  --color-secondary: #0A2A57;
+  --color-accent: #F59E0B;
+}

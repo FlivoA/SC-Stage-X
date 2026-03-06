@@ -7,6 +7,8 @@ export function normalizeTitle(input: string): string {
     .replace(/\s+/g, ' ');
 }
 
+
+
 const knownInsightRoutes: Record<string, string> = {
   [normalizeTitle('Dark Web Ransomware Trends: 8-Month Intelligence Study')]: 'insight-1',
   [normalizeTitle('AI-Powered Threats: 12-Month Research Analysis')]: 'insight-2',
@@ -28,4 +30,7 @@ export function getInsightRouteForTitle(title: string | undefined | null): strin
 export function registerInsightRoute(title: string, route: string): void {
   knownInsightRoutes[normalizeTitle(title)] = route;
 }
+
+
+
 

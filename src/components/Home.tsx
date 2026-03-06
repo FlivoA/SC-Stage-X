@@ -1,6 +1,12 @@
 import React from 'react';
 import OptimizedImage from './OptimizedImage';
-import { SquareArrowOutUpRight,CircleArrowRight } from 'lucide-react';
+import { SquareArrowOutUpRight, CircleArrowRight } from 'lucide-react';
+import { Hospital } from "lucide-react";
+
+
+
+
+
 
 
 
@@ -92,7 +98,7 @@ const Home: React.FC = () => (
                                     <CircleArrowRight size={16} />
                                 </span>
                             </a>
-                            
+
                             <a
                                 href="#"
                                 className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-md bg-[#0000D3] px-5 py-3 text-sm sm:text-base font-semibold text-white shadow-sm ring-1 ring-black/5 transition-colors hover:bg-blue-800"
@@ -217,7 +223,7 @@ const Home: React.FC = () => (
                                                 className="mt-2 inline-flex items-center text-[#0000D3] font-semibold text-sm hover:underline"
                                             >
                                                 {card.cta} <span className="ml-1 translate-y-[1px]" aria-hidden>
-                                                   <SquareArrowOutUpRight size={14}  strokeWidth={3} />
+                                                    <SquareArrowOutUpRight size={14} strokeWidth={3} />
                                                 </span>
                                             </a>
                                             <div className="pointer-events-none absolute top-0 right-0 hidden h-full w-[120px] rounded-r-xl bg-gradient-to-r from-transparent to-white/60 lg:block" />
@@ -329,67 +335,86 @@ const Home: React.FC = () => (
 
         {/* section4 -Industry Focus  */}
 
-        <section className="relative py-24 px-6 bg-gradient-to-b from-white to-gray-100 overflow-hidden">
-            <div className="max-w-7xl mx-auto">
+        <section className="py-24 bg-slate-50">
+            <div className="max-w-7xl mx-auto px-6">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-                {/* Section Header */}
-                <div className="text-center mb-20">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6 text-gray-900">
-                        Serving Regulated and Enterprise Sectors
-                    </h2>
-
-                    <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        Security Council programs are designed for industries where governance,
-                        compliance readiness, and operational resilience are mission-critical.
-                    </p>
-                </div>
-
-                {/* Industry Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-
-                    {/* Card 1 */}
-                    <div className="group bg-white/70 backdrop-blur-lg p-8 rounded-3xl border border-gray-200 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 text-center hover:text-blue-600">
-                        <div className="w-14 h-14 mx-auto mb-6 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 text-xl font-bold">
-                            💳
+                    {/* Left Content Column */}
+                    <div className="lg:col-span-5 space-y-6">
+                        <div className="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-widest">
+                            Industries
                         </div>
-                        <h3 className="text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition">
-                            Banking & Financial Services (BFSI)
-                        </h3>
+                        <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-[1.1]">
+                            Serving Regulated and <br /> <span className="text-blue-600">Enterprise Sectors</span>
+                        </h2>
+                        <p className="text-slate-600 text-lg leading-relaxed max-w-md">
+                            Security Council programs are designed for industries where governance, compliance, and resilience are mission-critical.
+                        </p>
                     </div>
 
-                    {/* Card 2 */}
-                    <div className="group bg-white/70 backdrop-blur-lg p-8 rounded-3xl border border-gray-200 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 text-center">
-                        <div className="w-14 h-14 mx-auto mb-6 flex items-center justify-center rounded-full bg-green-100 text-green-600 text-xl font-bold">
-                            🛡️
-                        </div>
-                        <h3 className="text-lg font-semibold text-gray-800 group-hover:text-green-600 transition">
-                            Insurance
-                        </h3>
-                    </div>
+                    {/* Right Grid Column */}
+                    <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        {[
+                            {
+                                title: "BFSI",
+                                icon: "💳",
+                                img: "https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?auto=format&fit=crop&q=80&w=400",
+                                desc: "Banking & Finance"
+                            },
+                            {
+                                title: "Insurance",
+                                icon: "🛡️",
+                                img: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=400",
+                                desc: "Risk Management"
+                            },
+                            {
+                                title: "Healthcare",
+                                icon:<Hospital className="text-blue-500 w-10"/>,
+                                img: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=400",
+                                desc: "Patient Data Safety"
+                            },
+                            {
+                                title: "Enterprise",
+                                icon: "🏢",
+                                img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=400",
+                                desc: "Global Infrastructure"
+                            }
+                        ].map((item, idx) => (
+                            <div
+                                key={idx}
+                                className="group relative h-64 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl"
+                            >
+                                {/* Image Layer */}
+                                <div className="absolute inset-0 z-0">
+                                    <img
+                                        src={item.img}
+                                        alt={item.title}
+                                        className="h-full w-full object-cover transition-transform duration-700 scale-105 group-hover:scale-110 group-hover:rotate-1"
+                                    />
+                                    {/* Dark Overlay/Gradient */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
+                                </div>
 
-                    {/* Card 3 */}
-                    <div className="group bg-white/70 backdrop-blur-lg p-8 rounded-3xl border border-gray-200 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 text-center">
-                        <div className="w-14 h-14 mx-auto mb-6 flex items-center justify-center rounded-full bg-red-100 text-red-600 text-xl font-bold">
-                            🏥
-                        </div>
-                        <h3 className="text-lg font-semibold text-gray-800 group-hover:text-red-600 transition">
-                            Healthcare
-                        </h3>
+                                {/* Content Layer */}
+                                <div className="absolute inset-0 z-10 p-8 flex flex-col justify-end">
+                                    <span className="text-3xl mb-3 transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-2">
+                                        {item.icon}
+                                    </span>
+                                    <h3 className="text-xl font-bold text-white mb-1 tracking-tight">
+                                        {item.title}
+                                    </h3>
+                                    <p className="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
+                                        {item.desc}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
-
-                    {/* Card 4 */}
-                    <div className="group bg-white/70 backdrop-blur-lg p-8 rounded-3xl border border-gray-200 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 text-center">
-                        <div className="w-14 h-14 mx-auto mb-6 flex items-center justify-center rounded-full bg-purple-100 text-purple-600 text-xl font-bold">
-                            🏢
-                        </div>
-                        <h3 className="text-lg font-semibold text-gray-800 group-hover:text-purple-600 transition">
-                            Enterprise Organizations
-                        </h3>
-                    </div>
-
                 </div>
             </div>
         </section>
+
+
 
 
 
@@ -424,7 +449,7 @@ const Home: React.FC = () => (
                     {/* CTA */}
                     <button className="inline-flex items-center gap-2 bg-[#0000D3] text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300 shadow-md hover:shadow-lg">
                         Learn About Engagement Model
-                       < CircleArrowRight size={14}  />
+                        < CircleArrowRight size={14} />
                     </button>
 
                 </div>
