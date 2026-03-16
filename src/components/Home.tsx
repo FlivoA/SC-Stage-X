@@ -345,7 +345,7 @@ const Home: React.FC = () => (
                             Industries
                         </div>
                         <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-[1.1]">
-                            Educataing Regulated and <br /> <span className="text-blue-600">Enterprise Sectors</span>
+                            Educating Regulated and <br /> <span className="text-blue-600">Enterprise Sectors</span>
                         </h2>
                         <p className="text-slate-600 text-lg leading-relaxed max-w-md">
                             BFSI programs are designed for industries where governance, compliance, and resilience are mission-critical.
