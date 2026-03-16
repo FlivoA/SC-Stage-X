@@ -73,13 +73,13 @@ const Home: React.FC = () => (
                         <div className="relative inline-block group max-w-4xl">
 
                             <h1 className="mt-3 text-[#0A2A57] text-2xl sm:text-4xl md:text-5xl lg:text-[50px] leading-tight lg:leading-[1.1] font-extrabold tracking-[-0.03em] whitespace-nowrap">
-                                Enabling Enterprise Securit
+                                Enabling BFSI Security
                                 <br /> Through Structured Standards
                             </h1>
 
                             <p className="absolute top-1/2 left-full ml-6 -translate-y-1/2 w-[360px] p-5 rounded-xl shadow-2xl bg-blue-600 text-black text-sm leading-relaxed opacity-0 translate-x-3 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0 pointer-events-none z-40 ">
 
-                                Security Council strengthens organizational security maturity through
+                                BFSI strengthens organizational security maturity through
                                 education-first awareness programs, structured enablement frameworks,
                                 and independent certification aligned with regulated industry expectations.
                             </p>
@@ -133,7 +133,7 @@ const Home: React.FC = () => (
                                 A Structured Approach to Security Maturity
                             </h2>
                             <p className="mt-3 text-lg text-white/80">
-                                Security readiness requires more than reactive controls. Security Council provides a structured, advisory-led framework designed to improve awareness, enable capability, and validate preparedness.
+                                Security readiness requires more than reactive controls. BFSI provides a structured, advisory-led framework designed to improve awareness, enable capability, and validate preparedness.
                             </p>
                             <div className="mt-6 flex flex-col gap-4">
                                 {heroCards.map((card) => (
@@ -180,7 +180,7 @@ const Home: React.FC = () => (
 
                                     <p className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 w-[320px] p-4 rounded-lg shadow-xl bg-blue-600 text-black text-[13px] opacity-0 scale-95 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100 pointer-events-none ">
                                         Security readiness requires more than reactive controls.
-                                        Security Council provides a structured, advisory-led framework
+                                        BFSI provides a structured, advisory-led framework
                                         designed to improve awareness, enable capability, and validate preparedness.
                                     </p>
 
@@ -348,7 +348,7 @@ const Home: React.FC = () => (
                             Serving Regulated and <br /> <span className="text-blue-600">Enterprise Sectors</span>
                         </h2>
                         <p className="text-slate-600 text-lg leading-relaxed max-w-md">
-                            Security Council programs are designed for industries where governance, compliance, and resilience are mission-critical.
+                            BFSI programs are designed for industries where governance, compliance, and resilience are mission-critical.
                         </p>
                     </div>
 
@@ -435,7 +435,7 @@ const Home: React.FC = () => (
                 <div className="bg-white shadow-xl rounded-3xl p-10 md:p-14 border border-gray-100">
 
                     <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-6 max-w-3xl mx-auto">
-                        Security Council operates through a structured engagement model,
+                        BFSI operates through a structured engagement model,
                         providing continuous access to awareness resources, training programs,
                         advisory assessments, and certification lifecycle support.
                     </p>
@@ -464,7 +464,7 @@ const Home: React.FC = () => (
                 {/* Left Content */}
                 <div>
                     <h2 className="text-3xl md:text-4xl font-bold text-[#0A2A57]">
-                        Security Council Certification
+                        BFSI Certification
                     </h2>
 
                     <p className="mt-6 text-gray-600 text-base md:text-lg leading-relaxed">
@@ -545,7 +545,7 @@ const Home: React.FC = () => (
                         <div className="relative flex flex-col gap-6">
                             <div className="text-center sm:text-left">
                                 <h3 className="mb-3 text-2xl font-bold leading-tight text-white">
-                                    Security Council Briefing
+                                    BFSI Briefing
                                 </h3>
                                 <p className="text-sm sm:text-base leading-relaxed text-white/85">
                                     Receive structured security awareness insights, governance guidance, and certification updates directly to your inbox.
@@ -577,7 +577,7 @@ const Home: React.FC = () => (
                                 </button>
                             </div>
                             <p className="text-xs leading-relaxed text-white/70">
-                                By clicking the "Continue" button, you are agreeing to the Security Council Terms of
+                                By clicking the "Continue" button, you are agreeing to the BFSI Terms of
                                 Use and Privacy Policy.
                             </p>
                         </div>
@@ -600,7 +600,7 @@ const Home: React.FC = () => (
                         <div className="flex w-full max-w-6xl flex-col items-center gap-8 rounded-md border border-white/30 bg-white/55 px-4 py-8 shadow-[0_18px_50px_rgba(0,0,0,0.08)] supports-[backdrop-filter]:backdrop-blur-[3px] sm:w-[90%] sm:px-8 sm:py-10 lg:h-[238px] lg:flex-row lg:items-center lg:gap-[46px] lg:px-[96px]">
                             <div className="w-full text-center lg:w-[560px] lg:text-left">
                                 <h3 className="mb-3 text-xl sm:text-2xl lg:text-[32px] font-bold leading-tight lg:leading-[38px] text-[#002856]">
-                                    Security Council Briefing
+                                    BFSI Briefing
                                 </h3>
                                 <p className="text-sm sm:text-base lg:text-[18px] leading-relaxed lg:leading-[30px] text-black">
                                     Receive structured security awareness insights, governance guidance, and certification updates directly to your inbox.
@@ -643,7 +643,7 @@ const Home: React.FC = () => (
                                 </div>
                                 <p className="mt-2 text-xs sm:text-sm lg:text-[12px] leading-relaxed lg:leading-[18px] text-black">
                                     By clicking the &quot;Continue&quot; button, you are agreeing to the{' '}
-                                    <span className="text-[#0000D3]">Security Council Terms of Use</span> and{' '}
+                                    <span className="text-[#0000D3]">BFSI Terms of Use</span> and{' '}
                                     <span className="text-[#0000D3]">Privacy Policy.</span>
                                 </p>
                             </div>
@@ -663,7 +663,7 @@ const Home: React.FC = () => (
                         Strengthen Your Organization’s Security Readiness.
                     </h2>
                     <p className="mt-3 text-white/80 text-base sm:text-lg leading-relaxed">
-                        Engage with Security Council to advance awareness, enable capability,
+                        Engage with BFSI to advance awareness, enable capability,
                         and validate security maturity.
                     </p>
                 </div>
