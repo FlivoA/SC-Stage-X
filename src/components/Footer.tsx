@@ -10,7 +10,7 @@ const Footer: React.FC<FooterProps> = ({ onContactClick }) => {
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-12 px-4 py-14 sm:px-6">
         <div className="flex flex-col gap-6 border-b border-[#D9D9D9] pb-8 lg:flex-row lg:items-center lg:justify-between">
           <h2 className="text-2xl font-bold text-blue-900 sm:text-3xl">
-            Security Council
+            BFSI
           </h2>
           <div className="flex flex-wrap items-center gap-3 text-blue-900">
             {/* YouTube */}
@@ -230,7 +230,7 @@ const Footer: React.FC<FooterProps> = ({ onContactClick }) => {
               </a>
             ))}
           </div>
-          <div>© 2025 Security Council. All rights reserved.</div>
+          <div>© 2025 BFSI. All rights reserved.</div>
         </div>
       </div>
     </footer>
