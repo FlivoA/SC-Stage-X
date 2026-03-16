@@ -249,67 +249,67 @@ const App = () => {
 
   const titles: Record<string, { t: string; d: string }> = {
     home: {
-      t: "Security Council – Intelligence That Clarifies",
+      t: "BFSI – Intelligence That Clarifies",
       d: "Independent Cyber Threat Research. Trusted by Leaders. Backed by Analysts.",
     },
     "prev-home": {
-      t: "Previous Home – Security Council",
+      t: "Previous Home – BFSI",
       d: "Objective research intelligence and executive guidance to act with confidence.",
     },
     "our-intelligence": {
-      t: "Our Intelligence – Security Council",
+      t: "Our Intelligence – BFSI",
       d: "Explore our methodology, threat domains, and how we deliver clarity.",
     },
     "threat-analysis": {
-      t: "Threat Landscape Analysis – Security Council",
+      t: "Threat Landscape Analysis – BFSI",
       d: "Overview and analysis of the current cyber threat landscape.",
     },
     "who-we-guide": {
-      t: "Who We Guide – Security Council",
+      t: "Who We Guide – BFSI",
       d: "We guide boards, CISOs, and leaders where context matters most.",
     },
     "latest-insight": {
-      t: "Latest Insights – Security Council",
+      t: "Latest Insights – BFSI",
       d: "Read our latest research, briefings, and cyber threat insights.",
     },
     events: {
-      t: "Events – Security Council",
+      t: "Events – BFSI",
       d: "Upcoming and past events, briefings, and research presentations.",
     },
     "ai-threats": {
-      t: "AI Threats – Security Council",
+      t: "AI Threats – BFSI",
       d: "Analysis of AI-powered threats and real-world exposure.",
     },
     "threat-actor": {
-      t: "Threat Actor Research – Security Council",
+      t: "Threat Actor Research – BFSI",
       d: "Profiles and assessments of emerging threat actors.",
     },
     "threat-intelligence": {
-      t: "Threat Intelligence – Security Council",
+      t: "Threat Intelligence – BFSI",
       d: "Intelligence services and reporting to inform executive action.",
     },
     research: {
-      t: "Research – Security Council",
+      t: "Research – BFSI",
       d: "Deep-dive research with evidence-driven findings and context.",
     },
     speakers: {
-      t: "Speakers – Security Council",
+      t: "Speakers – BFSI",
       d: "Meet our speakers and subject-matter experts.",
     },
     agenda: {
-      t: "Agenda – Security Council",
+      t: "Agenda – BFSI",
       d: "Event agenda and session details.",
     },
     request: {
-      t: "Request a Briefing – Security Council",
-      d: "Request a confidential executive briefing from Security Council.",
+      t: "Request a Briefing – BFSI",
+      d: "Request a confidential executive briefing from BFSI.",
     },
     "new-intelligent": {
-      t: "New Intelligent – Security Council",
-      d: "Explore Security Council intelligence and newsletter resources.",
+      t: "New Intelligent – BFSI",
+      d: "Explore BFSI intelligence and newsletter resources.",
     },
     about: {
-      t: "About – Security Council",
+      t: "About – BFSI",
       d: "Learn about our organization and mission.",
     },
   };
