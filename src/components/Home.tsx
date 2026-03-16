@@ -345,7 +345,7 @@ const Home: React.FC = () => (
                             Industries
                         </div>
                         <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-[1.1]">
-                            Serving Regulated and <br /> <span className="text-blue-600">Enterprise Sectors</span>
+                            Educataing Regulated and <br /> <span className="text-blue-600">Enterprise Sectors</span>
                         </h2>
                         <p className="text-slate-600 text-lg leading-relaxed max-w-md">
                             BFSI programs are designed for industries where governance, compliance, and resilience are mission-critical.
@@ -362,7 +362,7 @@ const Home: React.FC = () => (
                                 desc: "Banking & Finance"
                             },
                             {
-                                title: "Insurance",
+                                title: "Insurance Services",
                                 icon: "🛡️",
                                 img: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=400",
                                 desc: "Risk Management"
@@ -425,7 +425,7 @@ const Home: React.FC = () => (
 
                 {/* Headline */}
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-10 text-gray-900 leading-tight">
-                    Advisory-Led. Subscription-Based. Standards-Driven.
+                    BFSI Board-Led. Researches-Based. Standards-Driven.
                 </h2>
 
                 {/* Divider */}
@@ -435,7 +435,7 @@ const Home: React.FC = () => (
                 <div className="bg-white shadow-xl rounded-3xl p-10 md:p-14 border border-gray-100">
 
                     <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-6 max-w-3xl mx-auto">
-                        BFSI operates through a structured engagement model,
+                        BFSI Board operates through a structured engagement model,
                         providing continuous access to awareness resources, training programs,
                         advisory assessments, and certification lifecycle support.
                     </p>
@@ -464,7 +464,7 @@ const Home: React.FC = () => (
                 {/* Left Content */}
                 <div>
                     <h2 className="text-3xl md:text-4xl font-bold text-[#0A2A57]">
-                        BFSI Certification
+                        BFSI Board Certification
                     </h2>
 
                     <p className="mt-6 text-gray-600 text-base md:text-lg leading-relaxed">
