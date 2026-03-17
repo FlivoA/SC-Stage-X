@@ -368,7 +368,7 @@ const Home: React.FC = () => (
                                 desc: "Risk Management"
                             },
                             {
-                                title: "Healthcare",
+                                title: "Finance",
                                 icon:<Hospital className="text-blue-500 w-10"/>,
                                 img: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=400",
                                 desc: "Patient Data Safety"
