@@ -76,6 +76,26 @@ import SecurityAwareness from "./components/Homepage/Herosection/SecurityAwarene
 import TrainingEnablement from "./components/Homepage/Herosection/TrainingEnablement";
 import MaturityAssessment from "./components/Homepage/Herosection/MaturityAssessment";
 import CertificationFramework from "./components/Homepage/Herosection/CertificationFramework";
+import DeveloperSecurityTraining from "./components/Homepage/Herosection/DeveloperSecurityTraining";
+import WorkforceEnablement from "./components/Homepage/Herosection/WorkforceEnablement";
+import Bgv from "./components/Homepage/Herosection/Bgv";
+import AdvisoryEngagement from "./components/Homepage/Herosection/AdvisoryEngagement";
+import OrganizationalCertification from "./components/Homepage/Herosection/OrganizationalCertification";
+import IndividualCertification from "./components/Homepage/Herosection/IndividualCertification";
+import FrameWork from "./components/Homepage/Herosection/FrameWork";
+import Eligibility from "./components/Homepage/Herosection/Eligibility";
+import ApplyCertification from "./components/Homepage/Herosection/ApplyCertification";
+import SecurityGovernance from "./components/Homepage/Herosection/SecurityGovernance";
+import DataProtection from "./components/Homepage/Herosection/DataProtection";
+import SecureDevelopment from "./components/Homepage/Herosection/SecureDevelopment";
+import ComplianceAlignment from "./components/Homepage/Herosection/ComplianceAlignment";
+import CouncilMethodology from "./components/Homepage/Herosection/CouncilMethodology";
+import OurMission from "./components/Homepage/Herosection/OurMission";
+import GovernanceAbout from "./components/Homepage/Herosection/GovernanceAbout";
+import Leadership from "./components/Homepage/Herosection/Leadership";
+import CouncilMembers from "./components/Homepage/Herosection/CouncilMembers";
+import Careers from "./components/Homepage/Herosection/Careers";
+import Contact from "./components/Homepage/Herosection/Contact";
 
 
 const App = () => {
@@ -236,6 +256,46 @@ const App = () => {
         return <CertificationDisclaimer/>
       case "programs/security-awareness":
         return <SecurityAwareness />;
+      case "programs/developer-training":
+        return <DeveloperSecurityTraining />;
+      case "programs/workforce":
+        return <WorkforceEnablement />;
+      case "programs/bgv":
+        return <Bgv />;
+      case "programs/advisory-engagement":
+        return <AdvisoryEngagement />;
+      case "certification/org-cert":
+        return <OrganizationalCertification />;
+      case "certification/individual-cert":
+        return <IndividualCertification />;
+      case "certification/framework":
+        return <FrameWork />;
+      case "certification/eligibility":
+        return <Eligibility />;
+      case "certification/apply":
+        return <ApplyCertification />;
+      case "standards/governance":
+        return <SecurityGovernance />;
+      case "standards/data-protection":
+        return <DataProtection />;
+      case "standards/secure-dev":
+        return <SecureDevelopment />;
+      case "standards/compliance":
+        return <ComplianceAlignment />;
+      case "standards/methodology":
+        return <CouncilMethodology />;
+      case "about/mission":
+        return <OurMission />;
+      case "about/governance-about":
+        return <GovernanceAbout />;
+      case "about/leadership":
+        return <Leadership />;
+      case "about/members":
+        return <CouncilMembers />;
+      case "about/careers":
+        return <Careers />;
+      case "about/contact":
+        return <Contact />;
       case "training-enablement":
         return <TrainingEnablement />
       case "maturity-assessment":
