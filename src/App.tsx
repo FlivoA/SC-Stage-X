@@ -6,10 +6,10 @@ import Footer from "./components/Footer";
 import ContactPopup from "./components/ContactPopup";
 import RequestPopup from "./components/RequestPopup";
 import WhoWeGuidePage from "./components/WhoWeGuidePage";
-import NewWhoWeGuidePage from "./components/NewWhoWeGuidePage";
+// import NewWhoWeGuidePage from "./components/NewWhoWeGuidePage";
 import OurIntelligencePage from "./components/OurIntelligencePage";
-import LatestInsightPage from "./components/LatestInsightPage";
-import EventsPage from "./components/EventsPage";
+// import LatestInsightPage from "./components/LatestInsightPage";
+// import EventsPage from "./components/EventsPage";
 import AIThreatsPage from "./components/AIThreatsPage";
 import ThreatActorPage from "./components/ThreatActorPage";
 import Insight1Page from "./components/insights/Insight1Page";
@@ -145,8 +145,8 @@ const App = () => {
             onBriefingClick={() => setIsBriefingOpen(true)}
           />
         );
-      case "our-intelligence":
-        return <NewIntelligentPage />;
+      // case "our-intelligence":
+      //   return <NewIntelligentPage />;
       // nested navbar pages   of our intelligence
       case "our-intelligence/threat-analysis":
         return <ThreatAnalysis />;
@@ -159,8 +159,8 @@ const App = () => {
       case "our-intelligence/research-briefs":
         return <ResearchBriefs />;
 
-      case "who-we-guide":
-        return <NewWhoWeGuidePage />;
+      // case "who-we-guide":
+      //   return <NewWhoWeGuidePage />;
       case "who-we-guide/bfsi":
         return <BFSIPage onNavigate={handleNavigate} />;
       case "who-we-guide/insurance":
@@ -173,8 +173,8 @@ const App = () => {
         return <ExecutiveLeadership onNavigate={handleNavigate} />;
       // case 'about':
       //     return <About />;
-      case "latest-insight":
-        return <LatestInsightPage onNavigate={handleNavigate} />;
+      // case "latest-insight":
+      //   return <LatestInsightPage onNavigate={handleNavigate} />;
       case "latest-insight/featured-reports":
         return <FeaturedReports />;
       case "latest-insight/news":
@@ -203,8 +203,8 @@ const App = () => {
         return <Insight8Page />;
       case "insight-9":
         return <Insight9Page />;
-      case "events":
-        return <EventsPage onNavigate={handleNavigate} />;
+      // case "events":
+      //   return <EventsPage onNavigate={handleNavigate} />;
       case "ai-threats":
         return <AIThreatsPage />;
       case "threat-actor":
